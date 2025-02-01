@@ -14,6 +14,16 @@ struct Home: View {
                 .font(.title2.bold())
                 .foregroundColor(.white)
             GeometryReader{proxy in
+                VStack(spacing: 15) {
+                    //Timer Ring 부분
+                    ZStack{
+                        Circle()
+                            .stroke(Color.blue.opacity(0.7), lineWidth: 10)
+                    }
+                    .padding(60)
+                    .frame(height: proxy.size.width)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             }
         }
         .padding()
