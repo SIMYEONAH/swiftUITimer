@@ -20,6 +20,9 @@ struct Home: View {
                         Circle()
                             .fill(.white.opacity(0.05))
                             .padding(-40)
+                        
+                        Circle()
+                            .stroke(.white.opacity(0.05), lineWidth: 80)
                         //Shadow (그림자)
                         Circle()
                             .stroke(Color.blue, lineWidth: 10)
